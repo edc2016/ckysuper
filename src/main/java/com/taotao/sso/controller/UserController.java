@@ -43,6 +43,7 @@ public class UserController {
             return ResponseEntity.ok(bool);
         } catch (Exception e) {
             e.printStackTrace();
+            //sfff;
         }
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
     }
