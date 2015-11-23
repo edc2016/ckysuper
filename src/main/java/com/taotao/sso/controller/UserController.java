@@ -29,7 +29,7 @@ public class UserController {
     private UserService userService;
 
     /**
-     * 检测数据是否可用
+     * 检测数据是否可用(陈冠希)
      * 
      * @param param
      * @param type
@@ -40,6 +40,7 @@ public class UserController {
             @PathVariable("type") Integer type) {
         try {
             Boolean bool = this.userService.check(param, type);
+            System.out.println("saasfsafsf");
             return ResponseEntity.ok(bool);
         } catch (Exception e) {
             e.printStackTrace();
