@@ -41,6 +41,8 @@ public class UserController {
         try {
             Boolean bool = this.userService.check(param, type);
             System.out.println("saasfsafsf");
+            System.out.println("saasfsafsf");
+            System.out.println("saasfsafsf");
             return ResponseEntity.ok(bool);
         } catch (Exception e) {
             e.printStackTrace();
